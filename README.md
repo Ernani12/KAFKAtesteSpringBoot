@@ -35,3 +35,8 @@ Criar um sistema de tratamento de mensagens personalizado exigiria um esforço s
 Um sistema personalizado provavelmente não teria os mesmos recursos e garantias de escalabilidade e confiabilidade oferecidos pelo Kafka.
 O Kafka é amplamente adotado pela comunidade e possui uma vasta gama de recursos, documentação e suporte disponíveis. Usá-lo permite aproveitar os benefícios de uma solução comprovada e testada em ambientes de produção.
 Além disso, o Kafka facilita a integração com outras ferramentas e frameworks, tornando-o uma escolha atraente para cenários de integração de sistemas complexos.
+
+
+*Em um contexto de aplicação Spring Boot, o aplicativo atuaria como um produtor, enviando mensagens para os tópicos do Kafka sempre que ocorresse um evento relevante, como o recebimento de um pedido em uma loja online.
+
+**Em um ambiente de produção, pode haver vários consumidores assinando os mesmos tópicos para processar as mensagens de diferentes maneiras. Por exemplo, um consumidor pode processar pedidos pendentes, enquanto outro consumidor pode gerar relatórios com base nas vendas.
